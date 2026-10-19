@@ -3,7 +3,7 @@ console.log(container);
 
 const dimensions = 16;
 
-for (let i = 0; i < dimensions*dimensions; i ++) {
+for (let i = 0; i < dimensions * dimensions; i ++) {
     const gridbox = document.createElement("div");
     container.appendChild(gridbox);
     gridbox.setAttribute("class", "box");
