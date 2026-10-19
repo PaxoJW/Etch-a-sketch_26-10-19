@@ -15,4 +15,6 @@
 .pixelate{
     color: white;
     background: blue;
+    width: 100px;
+    height: 100px;
 }
