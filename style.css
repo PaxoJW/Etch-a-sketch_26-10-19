@@ -1,20 +1,20 @@
+button {
+    background: green;
+    border-radius: 5px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
     justify-content: space-around;
 }
 
 .box {
     color: blue;
     background: white;
-    width: 100px;
-    height: 100px;
 }
 
 .pixelate{
     color: white;
     background: blue;
-    width: 100px;
-    height: 100px;
 }

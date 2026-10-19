@@ -1,21 +1,25 @@
 const container = document.querySelector("div.container");
-console.log(container);
+const startBtn = document.querySelector("button");
 
-const dimensions = 16;
 
-for (let i = 0; i < dimensions * dimensions; i ++) {
-    const gridbox = document.createElement("div");
-    container.appendChild(gridbox);
-    gridbox.setAttribute("class", "box");
-    gridbox.textContent = "Grid box";
-    console.log("Added a box");
-}
 
-const boxes = document.querySelectorAll(".box");
+startBtn.addEventListener("click", () => {
+    const gridDim = prompt("What should the dimensions be?");
+    if (gridDim < 100) {
+        container.innerHTML = "";
+        for (let i = 0; i < gridDim * gridDim; i ++) {
+            const gridbox = document.createElement("div");
+            container.appendChild(gridbox);
+            gridbox.textContent = "Grid box";
+            gridbox.setAttribute("class", "box");
+            const dimensions = 100/gridDim;
+            gridbox.setAttribute("style", `width: ${dimensions}%; height: 100px`);
+            
+            gridbox.addEventListener("mouseover", (e) => {
+                gridbox.setAttribute("class","pixelate");
+            })
+        }
+    } else {
 
-boxes.forEach(box => {
-    box.addEventListener("mouseover", (e) => {
-        box.setAttribute("class","pixelate");
-    })
-});
-
+    }
+})
