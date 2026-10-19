@@ -10,3 +10,12 @@ for (let i = 0; i < dimensions * dimensions; i ++) {
     gridbox.textContent = "Grid box";
     console.log("Added a box");
 }
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach(box => {
+    box.addEventListener("mouseover", (e) => {
+        box.setAttribute("class","pixelate");
+    })
+});
+
