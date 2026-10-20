@@ -12,8 +12,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 980px;
-    height: 980px;
     border: 1px solid rgb(0 128 0);
 }
 
